@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalaxyDelivery", "GalaxyDelivery\GalaxyDelivery.csproj", "{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{7D4CC929-FD91-4360-9CA3-0AAE0A4F9118}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255} = {2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D98E4F9-EA82-4AB4-8115-CB5FF78ED255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4CC929-FD91-4360-9CA3-0AAE0A4F9118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4CC929-FD91-4360-9CA3-0AAE0A4F9118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4CC929-FD91-4360-9CA3-0AAE0A4F9118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4CC929-FD91-4360-9CA3-0AAE0A4F9118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64F7312D-9C5E-4BEB-AD0F-9462822896DF}
+	EndGlobalSection
+EndGlobal

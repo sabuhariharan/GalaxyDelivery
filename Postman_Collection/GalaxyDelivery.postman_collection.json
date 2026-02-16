@@ -1,0 +1,935 @@
+{
+  "info": {
+    "_postman_id": "cebf183d-9fca-4211-8186-87524e3136b5",
+    "name": "GalaxyDelivery",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50148959",
+    "_collection_link": "https://go.postman.co/collection/50148959-cebf183d-9fca-4211-8186-87524e3136b5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Deliveries",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/1/summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/1/summary",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "1",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries - NEW DELIVERY 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"origin\": \"Colony A\",\r\n  \"destination\":  \"Colony C\",\r\n  \"driverId\": 1,\r\n  \"vehicleId\": 2,\r\n  \"routeId\": 3\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries - UPDATE DELIVERY 5",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"origin\": \"Colony A - Updated\",\r\n  \"destination\": \"Colony C\",\r\n  \"driverId\": 1,\r\n  \"vehicleId\": 2,\r\n  \"routeId\": 3\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/5",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents1 - ADD EVENT TO 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryEventDesc\": \"Started from Colony A\",\r\n  \"timestamp\": \"2026-02-15T10:30:00Z\",\r\n  \"deliveryId\": 5,\r\n  \"checkpointId\":7,\r\n  \"statusId\": 2\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents2 - ADD EVENT TO 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryEventDesc\": \"Reached checkpoint Colony B\",\r\n  \"timestamp\": \"2027-02-15T10:30:00Z\",\r\n  \"deliveryId\": 5,\r\n  \"checkpointId\": 8,\r\n  \"statusId\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents3 - ADD EVENT TO 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryEventDesc\": \"Reached Colony C\",\r\n  \"timestamp\": \"2028-02-15T10:30:00Z\",\r\n  \"deliveryId\": 5,\r\n  \"checkpointId\": 9,\r\n  \"statusId\": 4\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents3 - UPDATE EVENT ID 10",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryEventDesc\": \"Reached Colony C - Updated\",\r\n  \"timestamp\": \"2028-02-15T10:30:00Z\",\r\n  \"deliveryId\": 5,\r\n  \"checkpointId\": 9,\r\n  \"statusId\": 4\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents/10",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeliveryEvents - DELETE EVENT 10",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryEventDesc\": \"Reached Colony C\",\r\n  \"timestamp\": \"2028-02-15T10:30:00Z\",\r\n  \"deliveryId\": 5,\r\n  \"checkpointId\": 9,\r\n  \"statusId\": 4\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/DeliveryEvents/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "DeliveryEvents",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/5",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/5/summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/5/summary",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "5",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/4 - CAN DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deliveries/5 - CAN NOT DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Deliveries/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Deliveries",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Drivers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Drivers",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Drivers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Drivers/2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Drivers/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Drivers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Drivers - NEW DRIVER 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"driverName\": \"Han Solo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Drivers",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Drivers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Drivers - UPDATE DRIVER 1",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"driverName\": \"Captain Nova Updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Drivers/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Drivers",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Drivers/4",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Drivers/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Drivers",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vehicles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Vehicles",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Vehicles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vehicles/2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Vehicles/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Vehicles",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vehicles - NEW VEHICLE 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"vehicleMake\": \"StarRunner X1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Vehicles",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Vehicles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vehicles - UPDATE VEHICLE 4",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"vehicleMake\": \"StarRunner X1 - Updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Vehicles/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Vehicles",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Vehicles/4",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Vehicles/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Vehicles",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes/3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes/3",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes - NEW ROUTE 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"routeName\": \"Route 4\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkpoints - NEW CHECKPONT 10 for ROUTE 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"checkpointName\": \"New Checkpoint X\",\r\n  \"routeId\": 4\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Checkpoints",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Checkpoints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkpoints - UPDATE CHECKPOINT 10",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"checkpointName\": \"New Checkpoint X - Updated\",\r\n  \"routeId\": 4\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Checkpoints/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Checkpoints",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkpoints",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Checkpoints",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Checkpoints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkpoints/10",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Checkpoints/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Checkpoints",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes - UPDATE ROUTE 4",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"routeName\": \"Route 4 - Updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes/4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Routes/4",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Routes/4",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Routes",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkpoints/10",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44389/v1/api/Checkpoints/10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44389",
+          "path": [
+            "v1",
+            "api",
+            "Checkpoints",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
