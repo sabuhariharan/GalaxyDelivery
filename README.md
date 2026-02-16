@@ -38,13 +38,21 @@ From the solution folder:
 dotnet run --project .\GalaxyDelivery\GalaxyDelivery.csproj
 ```
 
+## Postman Collection
+
+- Available under `Postman_Collection/*` folder
+
+Note: Currently port 5000 is used in the launchsettings. If you are running in a different port, please make sure to change the port number in the Postman collection.
+
 The API seeds initial data on startup (see `GalaxyDelivery/Entities/DataGenerator.cs`).
 
 ### Example base URL
 
 When running locally, the base URL is typically something like:
 
-- `http://localhost:<port>`
+- `http://localhost:5000`
+
+
 
 Use the URLs shown in controller attributes, for example:
 
@@ -75,6 +83,7 @@ dotnet test
 - One Route has many Checkpoints.
 - Checkpoints are related with Routes. Now while adding/updating/deleting Checkpoint, no checking is done whether the related Route exits or not.
 - While deleting Route, corresponding Checkpoints will also be deleted.
+- Port 5000 is used for running the API.
 
 ---
 
@@ -87,9 +96,6 @@ dotnet test
 - In-process events: `GalaxyDelivery/Events/*`
 - Unit tests: `UnitTests/*`
 
-## Postman Collection
-
-- Available under `Postman_Collection/*` folder
 
 
 ## Areas for improvement
