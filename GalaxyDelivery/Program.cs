@@ -1,4 +1,3 @@
-using GalaxyDelivery.Controllers.Convertors;
 using GalaxyDelivery.Entities;
 using GalaxyDelivery.Events;
 using GalaxyDelivery.Events.Handlers;
@@ -21,12 +20,6 @@ namespace GalaxyDelivery
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container
-            builder.Services.AddScoped<DriverConvertor>();
-            builder.Services.AddScoped<VehicleConvertor>();
-            builder.Services.AddScoped<CheckpointConvertor>();
-            builder.Services.AddScoped<DeliveryRouteConvertor>();
-            builder.Services.AddScoped<DeliveryEventConvertor>();
-            builder.Services.AddScoped<DeliveryConvertor>();
             builder.Services.AddValidatorsFromAssembly(typeof(DriverValidator).Assembly);
             builder.Services.AddDbContext<GalaxyDbContext>(opt => opt.UseInMemoryDatabase("GalaxyDelivery"));
             builder.Services.AddScoped<IDriverService, DriverService>();
