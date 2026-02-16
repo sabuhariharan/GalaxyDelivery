@@ -42,7 +42,8 @@ dotnet run --project .\GalaxyDelivery\GalaxyDelivery.csproj
 
 - Available under `Postman_Collection/*` folder
 
-Note: Currently port 5000 is used in the launchsettings. If you are running in a different port, please make sure to change the port number in the Postman collection.
+🔴 Important note:  
+Currently port 5000 is used in the launchsettings. If you are running in a different port, please make sure to change the port number in the Postman collection.
 
 The API seeds initial data on startup (see `GalaxyDelivery/Entities/DataGenerator.cs`).
 
