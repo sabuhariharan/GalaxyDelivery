@@ -1,6 +1,5 @@
 using GalaxyDelivery.Entities;
 using GalaxyDelivery.Services;
-using Microsoft.EntityFrameworkCore;
 using UnitTests.TestHelpers;
 
 namespace UnitTests.Services;
