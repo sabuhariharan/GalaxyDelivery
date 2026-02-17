@@ -6,7 +6,6 @@ using GalaxyDelivery.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace GalaxyDelivery.Controllers;
